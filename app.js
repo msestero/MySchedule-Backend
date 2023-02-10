@@ -2,9 +2,8 @@ const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
 
-app.use(cors());
-
 const app = express();
+app.use(cors());
 app.use(express.json())
 
 const { check_task_put, check_task_patch } = require('./schema_check');
